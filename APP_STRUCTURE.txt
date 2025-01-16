@@ -1,0 +1,238 @@
+
+SynCCare: Synchronized Care
+Application Description: SynCCare
+
+The idea for SynCCare originated from a recent hospital experience where a family member was hospitalized
+and unable to communicate health-related information due to their critical condition.
+In most public hospitals, you cannot simply call the reception desk to inquire about the status of an
+admitted patient. This became especially evident during the pandemic when visits were restricted, leaving family
+ members without a way to find out what was happening if the hospitalized individual couldn’t communicate via phone.
+
+How the application works:
+
+1. WEBSITE
+A user-friendly and simple interface where users can access the following:
+
+MENU
+DEPARTMENTS
+PRICING
+RATING
+CONTACT
+LOGIN/LOGOUT
+LANGUAGE SWITCH (RO/EN)
+
+ELECTRONIC MEDICAL FILE
+A patient’s relative creates an account and can view the following details in the electronic medical file:
+
+Admission date/discharge date (if applicable).
+Daily test results.
+Cleaning/disinfection log for the room.
+Bed linen change log.
+Current treatment/new treatment (with accompanying explanation).
+Whether the patient had breakfast/lunch/dinner or refused meals.
+General mood and condition.
+The timestamp and details of the last update to the file, including who made the update.
+Items the patient might need.
+Treatment plan prescribed by the doctor, including a progress summary.
+Additional observations.
+In this section, the relative can also request an appointment (via phone or in-person) with the attending physician,
+depending on their availability, by filling out a short questionnaire.
+
+
+2. INTERNAL MANAGEMENT INTERFACE
+An administrative interface for medical staff that allows real-time updates to patient files.
+This interface operates based on a predefined user hierarchy with roles and permissions:
+
+The hospital is divided into 6 DEPARTMENTS:
+
+Cardiology
+Rheumatology
+Pulmonology
+Oncology
+Gastroenterology
+Kinetotherapy
+
+
+Each department has the following structure ---> User Roles and Permissions <---
+
+***CERTIFIED NURSE - LEVEL 1 USER***
+Updates when the room was disinfected or bed linens were changed.
+Records whether the patient had breakfast/lunch/dinner or refused the meal.
+Can view and mark assigned tasks as completed.
+Cannot access other patient details.
+Add necessary items for the patient to be brought.
+
+
+***LICENSED NURSE - LEVEL 2 USER***
+
+Records vital signs and recent test results.
+Can view and mark assigned tasks as completed.
+Can assign tasks to CERTIFIED NURSE(1).
+View all activities of CERTIFIED NURSE(1).
+
+
+
+***ATTENDING PHYSICIAN - LEVEL 3 USER***
+
+Can add/modify treatments.
+Can view and mark assigned tasks as completed.
+Can assign tasks to LICENSED NURSE(2).
+Can view activities of CERTIFIED NURSE(1) and LICENSED NURSE(2).
+
+
+
+***DOCTOR ON DUTY - LEVEL 4 USER***
+
+Can add/modify treatments.
+Can view and mark assigned tasks as completed.
+Can assign tasks to LICENSED NURSE(2).
+Can view activities of CERTIFIED NURSE(1) and LICENSED NURSE(2).
+
+
+
+***HEAD OF DEPARTMENT - LEVEL 5 USER***
+
+Can add/modify treatments.
+Can view and mark assigned tasks as completed.
+Can assign tasks to ATTENDING PHYSICIAN(3) and DOCTOR ON DUTY(4).
+Can view activities of CERTIFIED NURSE(1), LICENSED NURSE(2), ATTENDING PHYSICIAN(3) and DOCTOR ON DUTY(4).
+Can download comprehensive patient reports for any given time period for any patient in his ward.
+Can view and edit financial reports, work schedules, and employment contracts for their ward.
+Can access all active (admitted) and inactive (discharged) patients in their ward, over any time period.
+
+
+
+***HOSPITAL MANAGER - LEVEL 6 USER***
+
+Can assign tasks for CERTIFIED NURSE(1), LICENSED NURSE(2), ATTENDING PHYSICIAN(3), DOCTOR ON DUTY(4) and HEAD OF DEPARTMENT(5).
+Can view activities for ALL USER LEVELS (1)-(2)-(3)-(4)-(5).
+Can view, download, and edit all financial reports, work schedules, and employment contracts across the entire hospital.
+Can add/modify treatments and instructions for ALL USER LEVELS (1)-(2)-(3)-(4)-(5).
+Can download complete patient reports for any specified time period, for all the wards in the hospital.
+Can access, create and edit all reports related to medical insurance data, supplier contracts, budget and equipments.
+
+
+
+
+
+SynCCare: Grija sincronizata
+Descrierea aplicatiei:  *SynCCare*
+
+Ideea a pornit de la o experienta relativ recenta in spital, cand unul din membrii familiei, internat fiind, nu putea
+sa comunice informatii despre starea de sanatate, aflandu-se intr-o stare destul de dificila.
+La majoritatea spitalelor de stat, nu poti suna la receptie, de exemplu, sa intrebi ce face persoana internata.
+Pandemiei este un exemplu extrem de bun, pentru ca vizitele au fost interzise si efectiv, nu
+aveai nici o posibilitate de a afla ce se intampla, daca persoana internata era incapabila de a comunica prin telefon.
+
+Aplicatia ar functiona astfel:
+
+1. Partea de WEBSITE - Cu o interfata prietenoasa si simpla, unde:
+MENIU:
+        - SECTII
+        - TARIFE
+        - RATING
+        - CONTACT
+        - LOGIN/LOGOUT
+        - LIMBA RO/EN
+        - FISA ELECTRONICA
+
+Apartinatorul pacientului isi creeaza un cont si poate vedea urmatoarele in fisa electronica:
+- data internarii / data eventualei externari;
+- rezultatele analizelor efectuate zilnic;
+- cand a fost dezinfectat salonul;
+- cand au fost schimbate lenjeriile de pat;
+- tratamentul curent/ noul tratament cu motivatia de rigoare;
+- daca pacientil a mancat mic dejun/ pranz / cina sau a refuzat una sau toate mesele oferite;
+- starea de spirit generala;
+- ora, data la care a avut loc ultima modificare in aceasta fisa electronica si de catre cine a fost modificata;
+- lucuri de care pacintul ar putea avea nevoie;
+- schema de tratament pe care o prevede medicul impreuna cu o concluzie din partea acestia in legatura cu progresul;
+- alte observatii;
+
+--> De asemnea, in aceasta sectiune, apartinatorul poate solicita o programare telefonica sau o programare in
+unitatea medicala, cu medicul curant, in functie de disponibilitatea  calendarului acestuia, prin intermediul unui
+scurt chestionar.
+
+
+2. Partea de Administrare Interna - O interfata pentru STAFF
+
+In aceasta parte administrativa, se face updatarea fisei in timp real de catre tot personalul medical din unitate,
+avand la baza o ierarhie predefinita cu useri si permisiuni in functie de:
+
+Am avea 6 SECTII: CARDIOLOGIE, REUMATOLOGIE, PNEUMOLOGIE, ONCOLOGIE, GASTROENTEROLOGIE, KINETOTERAPIE
+Fiecare sectie are urmatoarea structura:
+
+
+USER 1 (INFIRMIER)
+
+- poate updata cand a fost dezinfectat salonul, cand s-au schimbat asternuturile, daca pacientul a luat micul dejun/ pranzul/ cina.
+- poate vizualiza taskurile asignate si le poate bifa ca indeplinite dupa finalizare
+- nu poate vizualiza alte informatii referitoare la pacient
+- poate adauga produse necesare de adus pacientului
+
+
+
+USER 2  (ASISTENT)
+
+- poate inregistra functiile vitale si rezultatele analizelor recente
+- poate vizualiza taskurile asignate si le poate bifa ca indeplinite dupa finalizare
+- poate adauga task uri pentru userul 1
+- poate vizualiza toate activitatile userului 1
+
+
+
+USER 3 (MEDIC CURANT)
+
+- poate adauga/modifica tratament
+- poate vizualiza taskurile asignate si le poate bifa ca indeplinite dupa finalizare
+- poate adauga task uri pentru userul 2
+- poate vizualiza activitatea userilor 1, 2 si 4
+
+
+
+USER 4 (MEDIC DE GARDA)
+
+- poate adauga/modifica tratament
+- poate vizualiza taskurile asignate si le poate bifa ca indeplinite dupa finalizare
+- poate adauga task uri pentru userul 2
+- poate vizualiza activitatea userilor 1, 2 si 3
+
+
+
+USER 5 ( SEF DE SECTIE )
+
+- poate adauga/modifica tratament
+- poate vizualiza taskurile asignate si le poate bifa ca indeplinite dupa finalizare
+- poate adauga task uri pentru userul 3 si 4
+- poate vizualiza activitatea userilor 1, 2, 3 si 4
+- poate descarca un raport complet al pacientului pe orice perioada
+- poate vizualiza si edita rapoarte financiare al sectiei, orare de lucru si contracte de munca ale sectiei respective
+- poate vizualiza toti pacientii activi(internati) si inactivi(externati) din intreaga sectie, pe orice perioada
+
+
+
+USER 6 ( MANAGER SPITAL )
+
+- poate adauga task uri pentru userii 1, 2, 3, 4 si 5
+- poate vizualiza activitatea userilor 1, 2, 3, 4 si 5
+- poate vizualiza, descarca si edita TOATE rapoartele financiare, orare de lucru si contracte de munca pe intreaga unitate medicala
+- poate adauga/modifica tratament si instructiuni pentru userii ASISTENT/a,  INFIRMIER/A, MEDIC CURANT, MEDIC DE GARDA, SEF DE SECTIE
+- poate vizualiza activitatea userilor INFIRMIERA / ASISTENTA/ MEDIC CURANT, MEDIC DE GARDA, SEF DE SECTIE
+- poate descarca raportul complet al pacientului/ pacientilor pe o perioada anume.
+- poate accesa si edita TOATE rapoartele, asigurari medicale, orar de lucru si contracte de munca interne, contracte furnizori, in intreaga unitate medicala.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
