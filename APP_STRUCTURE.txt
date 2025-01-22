@@ -11,7 +11,7 @@ admitted patient. This became especially evident during the pandemic when visits
 How the application works:
 
 1. WEBSITE
-A user-friendly and simple interface where users can access the following:
+A user-friendly and simple interface where relatives can access the following:
 
 MENU
 DEPARTMENTS
